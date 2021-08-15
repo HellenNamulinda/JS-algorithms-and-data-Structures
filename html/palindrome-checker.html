@@ -1,104 +1,26 @@
-<!Doctype html>  
-<html lang = "en">  
-  
-<head>  
-    <title> Palindrome Program in JavaScript </title>  
-    <style>  
-    h2 {  
-    text-align: center;  
-    padding: 30px;  
-    background-color: rgb(126, 104, 252);  
-    color: white;  
-    }  
-      
-    .palindrome {  
-    margin: auto;  
-    width: 50%;  
-    border: 3px solid gray;  
-    border-radius: 5px;  
-    padding: 30px; 
-    margin-bottom: 50px; 
-    }  
-      
-    #palindrome {  
-    width: 100%;  
-    border: 3px solid gray;  
-    border-radius: 5px;  
-    padding: 6px;  
-    }  
-
-    #btn{
-    background-color: blue; 
-    color: white; 
-    border-radius:5px ; 
-    width: 80px; 
-    height: 30px;
-}
-    </style>  
-      
-    </head>  
-      
-    <body>  
-        <h2>JavaScript Program to check for a Palindrome</h2>  
-        <div class="palindrome">  
-        <label> Enter any sentence (strings or numbers) : </label> <br> <br>  
-        <input id= "palindrome"> <br> <br>  
-        <button id="btn" type = "button" onclick = "palindrome()">
-             Check 
-        </button>  
-        </div>
-<div>
-    <dl>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Palindrome Program in JavaScript</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <h2>JavaScript Program to check for a Palindrome</h2>
+    <div class="palindrome">
+      <label> Enter any sentence (strings or numbers) : </label> <br />
+      <br />
+      <input id="palindrome" /> <br />
+      <br />
+      <button id="btn" type="button" onclick="palindrome()">Check</button>
+    </div>
+    <div>
+      <dl>
         <dt>
-            <b>N.B</b>
+          <b>N.B</b>
         </dt>
-        <dd>
-            - All non-alphanumeric characters are ignored.
-        </dd> 
-    </dl>
-</div>
-        
-        <script>   
-function palindrome() {
- str = document.getElementById ("palindrome").value;
- //remove all non-alphanumeric characters and converting to lowercase
- str1 = str.replace(/[^0-9a-z]/gi,"").toLowerCase();
- //convert string into an array
- let strArray = str1.split("");
- //reverse the array
- let reversedArray = strArray.reverse();
- //join the reversed array back to string
- let reversedStr = reversedArray.join("");
-
- //comparing the strings
- if(reversedStr == str1){
-  alert( "It is a Palindrome");  
- }
- else{
-   alert ("it is not a Palindrome"); 
- }
-}  
-
- 
-// code on FCC
-// function palindrome(str) {
-//  str = str.replace(/[^0-9a-z]/gi,"").toLowerCase();
-//  //convert string into an array
-//  let strArray = str.split("");
-//  //reverse the array
-//  let reversedArray = strArray.reverse();
-//  //join the reversed array back to string
-//  let reversedStr = reversedArray.join("");
-//  if(reversedStr == str){
-//   return true;
-//  }
-//  else{
-//    return false
-//  }
-// }
- 
-        </script>  
-        </body>  
-        </html>  
-          
-        
+        <dd>- All non-alphanumeric characters are ignored.</dd>
+      </dl>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
