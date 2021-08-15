@@ -1,0 +1,30 @@
+h2 {
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(126, 104, 252);
+  color: white;
+}
+
+.number {
+  margin: auto;
+  width: 50%;
+  border: 3px solid gray;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+#number {
+  width: 100%;
+  border: 3px solid gray;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+#btn {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+}
